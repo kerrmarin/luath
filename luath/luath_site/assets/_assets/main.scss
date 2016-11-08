@@ -1,0 +1,138 @@
+
+$background-color-primary:   #14B9D6;
+$background-color-secondary: #FFF;
+$font-stack:                 "Gill Sans", Helvetica, Arial, sans-serif;
+$font-color-primary:         #FFF;
+$font-color-secondary:       #5E6D81;
+
+body {
+  background-color: $background-color-primary;
+  color: $font-color-primary;
+  font: 14px $font-stack;
+  text-align: center;
+}
+
+.content {
+  padding-top: 50px;
+}
+
+h1 {
+  &.title {
+    font-family: 'Kaushan Script', $font-stack;
+    margin-bottom: -10px;
+  }
+  font-size: 6em;
+}
+
+h4.subtitle {
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: #5E6D81;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.section {
+  margin: 10px 0;
+  padding-bottom: 20px;
+}
+
+.feature-title {
+  list-style: none;
+}
+
+.feature-list {
+  margin:0px;
+  padding: 0px;
+}
+
+.feature-list li {
+  margin-bottom: 15px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#read-docs {
+  margin-top: 20px;
+}
+
+.secondary {
+  background-color: $background-color-secondary;
+
+  h2, a, .feature  {
+    color: $font-color-secondary;
+  }
+
+  a.btn {
+    border: 1px solid $font-color-secondary;
+    border-radius: 2px;
+    &:hover {
+      border: 1px solid $font-color-secondary;
+    }
+  }
+}
+
+.primary {
+  a {
+    color: $font-color-primary;
+    &:hover {
+      color: #323A45;
+      text-decoration: none;
+    }
+  }
+}
+
+form {
+  input.btn {
+    background-color: $background-color-primary;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    color: $font-color-primary;
+    &:hover {
+      background-color: #F27935;
+      border-color: #F27935;
+      color: $font-color-primary;
+    }
+  }
+
+  .form-field {
+    background-color: $background-color-secondary;
+    border: none;
+    border-radius: 2px;
+    color: $font-color-secondary;
+    text-align: center;
+    height:40px;
+  }
+}
+
+.login-form {
+  background-color: #EAEDF1;
+  padding:15px 20px 20px 20px;
+  margin-top: 70px;
+
+  .login-btn {
+    background-color:#F27935;
+    border-color: #F27935;
+    &:hover {
+      color: #DCE2E9;
+    }
+  }
+  h2 {
+    color: #5E6D81;
+  }
+}
+
+textarea, input {
+  box-shadow:none;
+  &:focus, &:active,  {
+    box-shadow:none;
+    outline: 0px;
+  }
+}

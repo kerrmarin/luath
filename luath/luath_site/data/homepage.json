@@ -1,0 +1,20 @@
+{
+    "features": [
+      {
+        "title": "REST API for the Swift Mailing lists"
+      },
+      {
+        "title": "Search the subject and body of whole lists"
+      },
+      {
+        "title": "Completely Open Source"
+      }
+    ],
+    "twitter": {
+      "username": "kerrmarin"
+    },
+    "github": {
+      "username": "kerrmarin",
+      "project": "luath"
+    }
+}

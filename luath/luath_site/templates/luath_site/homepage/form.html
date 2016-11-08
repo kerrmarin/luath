@@ -1,0 +1,27 @@
+{% if messages %}
+<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+    {% for message in messages %}
+    <div class="alert alert-{% if 'error' in message.tags %}danger{% else %}success{% endif %}">
+      {% if 'safe' in message.tags %}{{ message|safe }}{% else %}{{ message }}{% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 alert hidden" role="alert" id="form-submit-alert">
+  </div>
+  <form id="request-key" class="form-horizontal" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+        <input type="email" name="email" placeholder="Email" class="form-field form-control" id="email" required></input>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5">
+        <input type="submit" value="Request an API key" class="btn btn-block" id="submit-form" ></input>
+      </div>
+    </div>
+  </form>
+</div>

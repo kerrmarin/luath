@@ -1,0 +1,28 @@
+{
+  "name": "luath-site",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-filesize": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-postcss": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "luath",
+    "swift",
+    "swift mailing",
+    "swift mailing list api"
+  ],
+  "license": "MIT"
+}
