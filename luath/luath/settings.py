@@ -25,7 +25,7 @@ SECRET_KEY = os.environ['django_secret_key']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '52.91.53.71']
+ALLOWED_HOSTS = ['localhost', 'luath.org', 'www.luath.org']
 
 # Application definition
 

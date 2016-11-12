@@ -3,3 +3,7 @@ node_modules
 *.pyc
 
 luath/luath_site/public
+
+importer/data/*
+
+luath.sql

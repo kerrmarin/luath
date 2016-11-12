@@ -1,8 +1,7 @@
 import os, sys, datetime, imaplib
 from GmailConverter import GmailConverter
 from GmailFetcher import GmailFetcher
-from PGSQLExporter import PGSQLConfiguration
-from PGSQLExporter import PGSQLExporter
+from PGSQLExporter import PGSQLConfiguration, PGSQLExporter
 
 fetcher = GmailFetcher()
 mailbox = imaplib.IMAP4_SSL('imap.gmail.com')

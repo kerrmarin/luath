@@ -1,6 +1,5 @@
-from email.utils import parsedate
+from email.utils import parsedate_tz, mktime_tz
 from datetime import datetime
-import time
 
 class Email:
     def __init__(self, messageid, fromEmail, fromName, inreplyto,
@@ -8,7 +7,9 @@ class Email:
         self.message_id = messageid
         self.from_email = fromEmail
         self.from_name = fromName
-        self.date = date
+        date_tuple = parsedate_tz(date)
+        timestamp = mktime_tz(date_tuple)
+        self.date = datetime.fromtimestamp(timestamp)
         self.in_reply_to = inreplyto
         self.subject = info = (subject[:298] + '..') if len(subject) > 300 else subject
         self.content = content

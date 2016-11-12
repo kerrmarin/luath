@@ -6,7 +6,7 @@ class List(models.Model):
     list_id = models.AutoField(primary_key=True)
     list_name = models.CharField(max_length=100)
     distribution_list = models.EmailField(max_length=100)
-    description = models.CharField(max_length=200)
+    description = models.CharField(max_length=300)
 
     def __str__(self):
         return self.list_id

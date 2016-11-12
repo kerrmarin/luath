@@ -63,7 +63,6 @@ class GmailFetcher():
             if not message:
                 print "Couldn't get message at index:", index
                 continue
-            print message
             emails.append(message)
         return emails
 
