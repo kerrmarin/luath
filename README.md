@@ -58,16 +58,21 @@ You can get the messages in a list by querying the `messages` resource. Messages
 ...
 ```
 
-### Search (Not yet implemented)
-You can search the Luath database in the subject or content fields for a query. The search endpoint is available under `/search/{list-id}/{query}`. You must also pass in a limit and offset to this endpoint. This endpoint returns a list of objects containing the message ID that matches your query.
+### Message Details
+You can get the messages in a list by querying the `messages` resource. Message details are available by querying the messages endpoint with a message id. For example: `/lists/{list-id}/messages/{message-id}`. This returns the message details.
 
 ```
-[
-  {
-    "messageId": "9D39DBB5-FF05-42ED-BF0A-D45C69B1AFE7@me.com"
-  }
-  ...
-]
+{
+  "id": "0040B915-CB9C-4D8E-9BAA-79FC3FE4B03D@jelee.co.uk",
+  "from": "james@jelee.co.uk",
+  "from_name": "James Lee",
+  "in_reply_to": null,
+  "date": "2015-12-08T12:23:19.000Z",
+  "datestring": "Tue, 8 Dec 2015 12:23:19 +0000",
+  "subject": "[swift-corelibs-dev] NSAttributedString attributesAtIndex return an\n\toptional.",
+  "content": "Hi all,\n\nBeen playing around with NSAttributedString ...",
+  "listId": 1
+}
 ```
 
 ### Response Codes
