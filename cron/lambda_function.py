@@ -10,7 +10,8 @@ lists = [
     "swift-build-dev@swift.org",
     "swift-corelibs-dev@swift.org",
     "swift-evolution@swift.org",
-    "swift-lldb-dev@swift.org"
+    "swift-lldb-dev@swift.org",
+    "swift-server-dev@swift.org"
 ]
 email = os.environ['gmail_username']
 email_password =  os.environ['gmail_password']
