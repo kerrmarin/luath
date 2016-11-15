@@ -13,7 +13,8 @@ def emailLists():
         "swift-build-dev",
         "swift-corelibs-dev",
         "swift-dev",
-        "swift-evolution"
+        "swift-evolution",
+        "swift-server-dev"
     ]
 
 def initialDate():
