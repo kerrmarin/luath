@@ -9,9 +9,9 @@ The Luath project has three main components:
 - The Luath homepage
 
 # Usage
-If you haven't yet, head over to [the Luath homepage](http://www.luath.org) and request an API key. Once you're set with an API key you can start querying the Luath API.
+If you haven't yet, head over to [the Luath homepage](https://www.luath.org) and request an API key. Once you're set with an API key you can start querying the Luath API.
 
-The Luath API is available at `http://www.luath.org/api/v1`.
+The Luath API is available at `https://www.luath.org/api/v1`.
 
 ## Authentication
 Once you have your API key, each request you make will have to have that key in the `Authorization` header. So if I were to make a request, one of the headers for the request would, for example, be:
